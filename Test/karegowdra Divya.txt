@@ -1,0 +1,179 @@
+1)method overloding means in a same class same method name but different parameter;
+static method means it uses the static key word it belongs to class rather than object.
+
+exp :static{
+System.out.println("Static block");
+}
+
+
+2)variables means to store the information.
+their are 3 types of variables
+a)local:it is define with in a main method body.
+b)instance:it decelare out side the method body.
+c)static variables:it is a key word which creat one copy.
+
+
+ex:
+class Classroom{
+
+int length=50;#it is a instance variable.
+Static String  name="XYZ";#it is a static
+{
+
+int length=20;# it is a local variable
+}
+
+
+3)Stack is used to allocate the memory,
+it is a first in first out.
+Heap memory is a primary memory,
+it has 3 types
+a)meata space
+b)constant pool
+c)instant memory
+
+
+4)class Book{
+ String brand="classmate";
+int price=40;
+
+ public void book()
+{
+system.out.println("invoking Book in con");
+
+}
+
+public void book(String brand)
+System.out. println("invoking Book in the con2);
+}
+
+public void book(int price)
+{
+System.out. println("invoking Book in con3);
+}
+}
+
+
+
+5) class cal{
+System.out. println("invoking addin instant);
+static void add()
+{
+System.out. println("invoking addin instant);
+add=1+2
+}
+static void add(num1, num2)
+{
+System.out. println("invoking add ")
+add=1+2
+}
+
+class Demo{
+System.out. println("invoking add ");
+cal add=new Add();
+
+}
+
+6)class Pen{
+Static String brand;
+int price;
+pen()
+{
+System.out. println("invoking pen in con);
+}
+pen(String brand)
+{
+System.out. println("invoking pen in con1);
+this.brand=brand;
+}
+
+pen(String brand,int price)
+{
+System.out. println("invoking pen in con1);
+
+this.brand=brand;
+this.price=price;
+}
+
+Static void printlnStatic();
+{
+
+System.out. println("invoking pen in Static);
+}
+
+void printInstant();
+{
+
+System.out. println("invoking pen in instant);
+}
+
+class PenRunner()
+public static void main(String[] args){
+Pen pen=new Pen("writo meter",25);
+Pen printInstant();
+pen printInstant();
+}
+
+
+7)constructor chaining means one method calling another method.
+
+
+class Wood{
+String type;
+double price;
+String woodName;
+	
+Wood(){
+super();
+System.out.println("Invoking no-arg constructor of Wood");
+}
+Wood(String type){
+this();
+this.type=type;
+System.out.println("Invoking string constructor of Wood");	
+	}
+Wood(String type,double price){
+this(type);
+this.price=price;
+System.out.println("Invoking string,double constructor of Wood");
+	}
+Wood(String type,double price,String woodName){
+this(type,price);
+this.woodName=woodName;
+System.out.println("Invoking string,double,String constructor of Wood");
+}
+	
+}	
+class WoodRunner{
+public static void main(String[] args){
+		
+Wood wood = new Wood("HardWood",2500,"Oak");
+		
+System.out.println("##################################");
+		
+Wood wood1 = new Wood("HardWood",2500,"Oak");
+		
+System.out.println("##################################");
+		
+}
+}
+
+
+5) class cal{
+System.out. println("invoking addin instant);
+static void add()
+{
+System.out. println("invoking addin instant);
+add=1+2
+}
+static void add(num1, num2)
+{
+System.out. println("invoking add ")
+add=1+2
+}
+
+class Demo{
+System.out. println("invoking add ");
+cal add=new Add();
+
+}
